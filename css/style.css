@@ -1,129 +1,269 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
   overflow-x: hidden;
 }
 
 header {
-    background-image: url("../images/header-background.png");
-    width: 100vw;  
-   background-position: center; /* Center the image */
-   background-repeat: no-repeat; /* Do not repeat the image */
-   background-size: cover; /* Resize the background image to cover the entire container */
-   
+  background-image: url("../images/header-background.png");
+  width: 100vw;  
+  height: 30vh;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 
 div.logo {
   width: 23%;
+  height: 30%;
   padding: 1%;
   text-align: center;
-  display: flex;
-  
+  display: flex;  
 }
-.navcontainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 li{
   display: inline-block;      
   vertical-align: top;  
 }
-
 nav{
   width: 70%;
+  height: 30%;
   padding: 1%;
   display: flex;
-  /* right: 0 */   
+  
 }
- ul{
-   width: 50%;
-   margin-left: auto;
- }
-   
- a{
-    font-size: 24px;
-    color: black;
-    text-decoration: none;
-    margin-left: 24px; } 
-    h1 {
-
-      font-family: Public Sans ;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 56px;
-      color: black;
-      text-align: center;
-      margin:auto;
-      width: 496px;
-      height: 168px;
-      
-      text-align: center;
-    } 
+ul{
+  width: 50%;
+  margin-left: auto;
+ }   
+a{
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  margin-left: 24px; }     
+h1 {
+  font-family: Public Sans ;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: black;
+  text-align: center;
+  margin:auto;
+  width: 100%;  
+  height: 70%; 
+  text-align: center;
+  } 
 
   
-    .heroImg{
-      height: 529.98px;
-      padding: 5% ;
-      width:90vw;
-      margin: 0 auto;
-      } 
-    .image {
-            display: inline-block;
-          
-
-    }
+.heroSection{
+  height: 70vh;
+  padding: 5% ;
+  width:90vw;
+  margin: 0 auto;
+  } 
+.heroImage {
+  display: inline-block;       
+   }
     
-    .content {
-      max-width: 30%;
-      /* float:right; */
-      display: inline-block;
-      vertical-align: top;
-      margin: 5%;
-    }
-    .herotext {
-      font-family: Public Sans;
-      font-size: 16px;
-      line-height:24px ;
-      font-weight: 400;
-      font-style: normal;
-      color:black;         
-      width: 698.53px;
-      height: 144px;
-    }
+.content {
+  width: 30%;
+  /* float:right; */
+  display: inline-block;
+  vertical-align: top;
+  margin: 5%;
+  }
+.herotext {
+  font-family: Public Sans;
+  font-size: 16px;
+  line-height:24px ;
+  font-weight: 400;
+  font-style: normal;
+  color:black;  
+
+ 
+  }
     
+  /*My skill section */
 
 
+h3 {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px; 
+  letter-spacing: -0.02em; 
+  color: black;  
+  margin:2%;  
+  /*flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;*/
+  } 
+
+.skills{
+  background: #FFFFFF; 
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+  margin-bottom: 10%;
+  }
+.card-content{
+  width: 30%;    
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: normal;
+  padding: 5%;
+  }
+    
+.skills-text{
+  min-height: 30%;
+  }
+ 
+
+
+.work-container { 
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5%;
+  grid-auto-flow: row;
+  grid-template-areas:
+  "cs1 cs2 cs3";
+  }
+
+.cs1 { grid-area: cs1; }
+
+.cs2 { grid-area: cs2; }
+
+.cs3 { grid-area: cs3; }
+
+.mockup{
+ width: 100%;
+ height: 60%;
+
+ }
+
+.cs-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: normal;
+  }
 
   
-   footer {
-    background-image: url("../images/header-background.png");
-    width: 100vw;  
-   background-position: center; /* Center the image */
-   background-repeat: no-repeat; /* Do not repeat the image */
-   background-size: cover; /* Resize the background image to cover the entire container */
-   text-align: center;
-   padding: 5% 0 3% 0 ;
- }
+footer {
+  background-image: url("../images/header-background.png");
+  width: 100vw;  
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  text-align: center;
+  padding: 5% 0 3% 0 ;
+  }
  button{
   padding: 16px 10%;
   background: #426318;
-border-radius: 100px;
-margin-bottom: 3%;
-color: white;
-font-family: 'Public Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 16px;
+  border-radius: 100px;
+  margin-bottom: 3%;
+  color: white;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
 
- }
+  }
  
- .copyright{
-  text-align: center;
+.copyright{
+ text-align: center;
 
 
- }
+  }
+  @media only screen and (max-width: 1000px) {
+    body {
+      background-color: aqua;
+    }
+  }
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    padding-top: 5%;
+    width: 100%;
+    height: 70%;
+  }
+  .heroSection{
+      display: flex;
+      flex-direction: column;
+    }  
+  .heroImage {
+      display: flex;
+      margin: auto;
+      padding: 30px;
+    }
+
+  .content {
+      width: 90%;          
+      display: flex;
+      flex-direction: column;      
+      margin: 5%;
+      justify-content: center;
+
+    }    
+  
+   
+      .skills {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:center ;
+        margin-bottom: 10%;
+        margin: 10px;
+        padding: 30px;}
+
+        .card-content{
+          width: 90%;    
+          
+          }
+
+
+    h3 {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 32px;
+      letter-spacing: -0.02em;
+      color: black;
+      margin: auto;}
+
+  .work-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;}
+
+.mockup {
+  width: 100%;
+  height: 60%;
+  padding: 40px;}
+    
+}
+ 
  
  
 
